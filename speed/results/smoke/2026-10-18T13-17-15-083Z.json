@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-18T13:17:15.085Z",
+  "machine": {
+    "cpu": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+    "threads": 8,
+    "ramGB": 34,
+    "platform": "win32 10.0.26300"
+  },
+  "ollama": "0.40.6",
+  "bandwidthGBs": 38.4,
+  "numPredict": 200,
+  "runsPerModel": 1,
+  "results": [
+    {
+      "model": "llama3.2:1b",
+      "parameters": "1.2B",
+      "quantization": "Q8_0",
+      "fileGB": 1.3,
+      "experts": null,
+      "predictedMaxDense": 29.1,
+      "predictedMax": 29.1,
+      "measuredEvalMedian": 8.8,
+      "measuredPromptMedian": 35.9,
+      "loadSeconds": 10.9,
+      "memoryGB": 1.5,
+      "gpuShare": "0%",
+      "contextLength": 4096,
+      "runs": [
+        {
+          "evalTokens": 200,
+          "evalRate": 8.761456041847518,
+          "promptTokens": 183,
+          "promptRate": 35.878610309669654,
+          "totalSeconds": 28.0221237
+        }
+      ]
+    }
+  ]
+}

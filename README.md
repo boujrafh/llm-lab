@@ -22,5 +22,22 @@ each run so cached prompts cannot distort the timings. Results go to `truncation
 `llama3.2:3b`. Its default-configuration runs 2 and 3 show 0.2 s reading times: they reused a cached
 prompt (fixed since); only run 1 timing is valid.
 
+## speed
+
+Can you predict how fast a model will write before downloading it? The rule of thumb says
+`tokens/s ≈ memory bandwidth ÷ weights read per token`. The script prints that prediction next to
+the measured speed for every installed model, including a mixture-of-experts model (`gpt-oss:20b`),
+which reads only part of its weights per token.
+
+```bash
+cd speed
+node speed-test.mjs 3                          # 3 runs per model, every installed model
+node speed-test.mjs 3 llama3.2:3b gpt-oss:20b  # or a chosen list
+```
+
+The default bandwidth (38.4 GB/s) is the theoretical figure for dual-channel DDR4-2400; set
+`BANDWIDTH_GBS` for your machine. Close other heavy programs first: a download running in the
+background slowed the first smoke test (`results/smoke/`). Results go to `speed/results/`.
+
 Method inspired by the "Kit IA locale" masterclass on local AI agents
 ([video](https://www.youtube.com/watch?v=MNFZoZUExSQ)).
