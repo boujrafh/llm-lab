@@ -39,5 +39,20 @@ The default bandwidth (38.4 GB/s) is the theoretical figure for dual-channel DDR
 `BANDWIDTH_GBS` for your machine. Close other heavy programs first: a download running in the
 background slowed the first smoke test (`results/smoke/`). Results go to `speed/results/`.
 
+## task
+
+Does a model hold on a real task, run after run? The same 100 synthetic notes as `truncation`, two
+tasks: count the clients who complained about a late delivery (18), then list them all. Because the
+data is synthetic, the script knows the right answer and scores every run itself: no LLM judge.
+
+```bash
+cd task
+node task-test.mjs 10                          # 10 runs per task, every installed model
+node task-test.mjs 10 llama3.1:8b              # or a chosen list
+```
+
+It uses `num_ctx 8192` so the 5,463-token prompt is never cut, and each model's default temperature
+with a different seed per run. Every raw answer is saved in `task/results/`.
+
 Method inspired by the "Kit IA locale" masterclass on local AI agents
 ([video](https://www.youtube.com/watch?v=MNFZoZUExSQ)).

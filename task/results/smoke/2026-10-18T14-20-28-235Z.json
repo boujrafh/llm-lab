@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-18T14:20:28.237Z",
+  "machine": {
+    "cpu": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+    "threads": 8,
+    "ramGB": 34,
+    "platform": "win32 10.0.26300"
+  },
+  "ollama": "0.40.6",
+  "numCtx": 8192,
+  "runsPerTask": 1,
+  "expected": {
+    "count": 18,
+    "clients": [
+      "Client 005",
+      "Client 011",
+      "Client 016",
+      "Client 023",
+      "Client 026",
+      "Client 029",
+      "Client 037",
+      "Client 052",
+      "Client 053",
+      "Client 059",
+      "Client 068",
+      "Client 069",
+      "Client 070",
+      "Client 072",
+      "Client 076",
+      "Client 090",
+      "Client 092",
+      "Client 100"
+    ]
+  },
+  "tasks": {
+    "count": "TASK: how many distinct clients complained about a late delivery? Answer with the number only.",
+    "list": "TASK: list every client who complained about a late delivery, one per line, in the form \"Client 000\". Include all of them and nothing else."
+  },
+  "models": [
+    {
+      "model": "llama3.2:1b",
+      "temperature": "Ollama default (0.8)",
+      "firstPromptTokens": 5463,
+      "count": [
+        {
+          "run": 1,
+          "seconds": 162,
+          "answer": "4",
+          "number": 4,
+          "correct": false
+        }
+      ],
+      "list": [
+        {
+          "run": 1,
+          "seconds": 80,
+          "answer": "Client 000\nClient 001\nClient 002\nClient 003\nClient 004\nClient 005\nClient 006\nClient 007\nClient 008\nClient 009\nClient 010\nClient 011\nClient 012\nClient 013\nClient 014\nClient 015\nClient 016\nClient 017\nClient 018\nClient 019\nClient 020\nClient 021\nClient 022\nClient 023\nClient 024\nClient 025\nClient 026\nClient 027\nClient 028\nClient 029\nClient 030\nClient 031\nClient 032\nClient 033\nClient 034\nClient 035\nClient 036\nClient 037\nClient 038\nClient 039\nClient 040\nClient 041\nClient 042\nClient 043\nClient 044\nClient 045\nClient 046\nClient 047\nClient 048\nClient 049\nClient 050\nClient 051\nClient 052\nClient 053\nClient 054\nClient 055\nClient 056\nClient 057\nClient 058\nClient 059\nClient 060\nClient 061\nClient 062\nClient 063\nClient 064\nClient 065\nClient 066\nClient 067\nClient 068\nClient 069\nClient 070\nClient 071\nClient 072\nClient 073\nClient 074\nClient 075\nClient 076\nClient 077\nClient 078\nClient 079\nClient 080\nClient 081\nClient 082\nClient 083\nClient 084\nClient 085\nClient 086\nClient 087\nClient 088\nClient 089\nClient 090\nClient 091",
+          "listed": 92,
+          "missing": [
+            "Client 092",
+            "Client 100"
+          ],
+          "extra": [
+            "Client 000",
+            "Client 001",
+            "Client 002",
+            "Client 003",
+            "Client 004",
+            "Client 006",
+            "Client 007",
+            "Client 008",
+            "Client 009",
+            "Client 010",
+            "Client 012",
+            "Client 013",
+            "Client 014",
+            "Client 015",
+            "Client 017",
+            "Client 018",
+            "Client 019",
+            "Client 020",
+            "Client 021",
+            "Client 022",
+            "Client 024",
+            "Client 025",
+            "Client 027",
+            "Client 028",
+            "Client 030",
+            "Client 031",
+            "Client 032",
+            "Client 033",
+            "Client 034",
+            "Client 035",
+            "Client 036",
+            "Client 038",
+            "Client 039",
+            "Client 040",
+            "Client 041",
+            "Client 042",
+            "Client 043",
+            "Client 044",
+            "Client 045",
+            "Client 046",
+            "Client 047",
+            "Client 048",
+            "Client 049",
+            "Client 050",
+            "Client 051",
+            "Client 054",
+            "Client 055",
+            "Client 056",
+            "Client 057",
+            "Client 058",
+            "Client 060",
+            "Client 061",
+            "Client 062",
+            "Client 063",
+            "Client 064",
+            "Client 065",
+            "Client 066",
+            "Client 067",
+            "Client 071",
+            "Client 073",
+            "Client 074",
+            "Client 075",
+            "Client 077",
+            "Client 078",
+            "Client 079",
+            "Client 080",
+            "Client 081",
+            "Client 082",
+            "Client 083",
+            "Client 084",
+            "Client 085",
+            "Client 086",
+            "Client 087",
+            "Client 088",
+            "Client 089",
+            "Client 091"
+          ],
+          "exact": false
+        }
+      ],
+      "summary": {
+        "countCorrect": "0/1",
+        "countAnswers": "4",
+        "listExact": "0/1",
+        "listMedianRightIds": 16,
+        "listMaxWrongIds": 76
+      }
+    }
+  ]
+}
