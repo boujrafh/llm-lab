@@ -54,5 +54,21 @@ node task-test.mjs 10 llama3.1:8b              # or a chosen list
 It uses `num_ctx 8192` so the 5,463-token prompt is never cut, and each model's default temperature
 with a different seed per run. Every raw answer is saved in `task/results/`.
 
+## notes
+
+The `task` test, split into small questions. Instead of reading the 100 notes at once, the model
+gets one note at a time and a yes/no question ("does this note say the client complained about a
+late delivery?"); the code counts the "yes" answers and lists the clients. Same data, same scoring.
+One run = 100 short calls, timed end to end.
+
+```bash
+cd notes
+node note-test.mjs 10                          # 10 runs, the 4 small models of the task test
+node note-test.mjs 10 llama3.1:8b              # or a chosen list
+```
+
+Each wrong or unclear answer is kept raw, with the wording of the note, in `notes/results/`.
+`results/smoke/`: one run of `llama3.2:1b` (it answered "no" to all 100 notes).
+
 Method inspired by the "Kit IA locale" masterclass on local AI agents
 ([video](https://www.youtube.com/watch?v=MNFZoZUExSQ)).
