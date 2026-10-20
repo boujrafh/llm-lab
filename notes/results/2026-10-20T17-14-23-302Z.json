@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-20T17:14:23.302Z",
+  "machine": {
+    "cpu": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+    "threads": 8,
+    "ramGB": 34,
+    "platform": "win32 10.0.26300"
+  },
+  "ollama": "0.40.6",
+  "runs": 3,
+  "callsPerRun": 100,
+  "expected": {
+    "count": 18,
+    "clients": [
+      "Client 005",
+      "Client 011",
+      "Client 016",
+      "Client 023",
+      "Client 026",
+      "Client 029",
+      "Client 037",
+      "Client 052",
+      "Client 053",
+      "Client 059",
+      "Client 068",
+      "Client 069",
+      "Client 070",
+      "Client 072",
+      "Client 076",
+      "Client 090",
+      "Client 092",
+      "Client 100"
+    ]
+  },
+  "question": "QUESTION: does the client note below say that the client complained about a late delivery? Answer with one word: yes or no.\n\n",
+  "models": [
+    {
+      "model": "gpt-oss:20b",
+      "temperature": "1",
+      "thinking": true,
+      "runs": [
+        {
+          "run": 1,
+          "seconds": 3069,
+          "count": 18,
+          "correct": true,
+          "exact": true,
+          "missing": [],
+          "extra": [],
+          "unclear": 0,
+          "odd": []
+        },
+        {
+          "run": 2,
+          "seconds": 1872,
+          "count": 18,
+          "correct": true,
+          "exact": true,
+          "missing": [],
+          "extra": [],
+          "unclear": 0,
+          "odd": []
+        },
+        {
+          "run": 3,
+          "seconds": 1815,
+          "count": 18,
+          "correct": true,
+          "exact": true,
+          "missing": [],
+          "extra": [],
+          "unclear": 0,
+          "odd": []
+        }
+      ],
+      "summary": {
+        "countCorrect": "3/3",
+        "countAnswers": "18",
+        "listExact": "3/3",
+        "maxMissing": 0,
+        "maxWrongIds": 0,
+        "medianSecondsPerRun": 1872
+      },
+      "missedByWording": {
+        "complained that the delivery arrived nine days after the promised date": 0,
+        "is unhappy because the shipment was late again this month": 0,
+        "says the order was delivered late and the site team lost a full day": 0
+      }
+    }
+  ]
+}
