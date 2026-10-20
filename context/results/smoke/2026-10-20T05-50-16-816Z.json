@@ -1,0 +1,447 @@
+{
+  "model": "llama3.2:1b",
+  "runs": 1,
+  "answerTokens": 200,
+  "parallelCtx": 8192,
+  "machine": {
+    "cpu": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+    "threads": 8,
+    "ramGB": 34,
+    "platform": "win32 10.0.26300"
+  },
+  "ollama": "0.40.6",
+  "memory": [
+    {
+      "kv": "f16",
+      "numCtx": 2048,
+      "sizeGB": 1.45,
+      "contextLength": 2048,
+      "engineCtx": 2048,
+      "slots": 1,
+      "kvType": "f16",
+      "breakdownMiB": {
+        "total": 1386,
+        "model": 1252,
+        "context": 64,
+        "compute": 70
+      }
+    },
+    {
+      "kv": "f16",
+      "numCtx": 4096,
+      "sizeGB": 1.52,
+      "contextLength": 4096,
+      "engineCtx": 4096,
+      "slots": 1,
+      "kvType": "f16",
+      "breakdownMiB": {
+        "total": 1452,
+        "model": 1252,
+        "context": 128,
+        "compute": 72
+      }
+    },
+    {
+      "kv": "f16",
+      "numCtx": 8192,
+      "sizeGB": 1.74,
+      "contextLength": 8192,
+      "engineCtx": 8192,
+      "slots": 1,
+      "kvType": "f16",
+      "breakdownMiB": {
+        "total": 1660,
+        "model": 1252,
+        "context": 256,
+        "compute": 152
+      }
+    },
+    {
+      "kv": "f16",
+      "numCtx": 16384,
+      "sizeGB": 2.03,
+      "contextLength": 16384,
+      "engineCtx": 16384,
+      "slots": 1,
+      "kvType": "f16",
+      "breakdownMiB": {
+        "total": 1932,
+        "model": 1252,
+        "context": 512,
+        "compute": 168
+      }
+    },
+    {
+      "kv": "f16",
+      "numCtx": 32768,
+      "sizeGB": 2.6,
+      "contextLength": 32768,
+      "engineCtx": 32768,
+      "slots": 1,
+      "kvType": "f16",
+      "breakdownMiB": {
+        "total": 2476,
+        "model": 1252,
+        "context": 1024,
+        "compute": 200
+      }
+    },
+    {
+      "kv": "q8_0",
+      "numCtx": 2048,
+      "sizeGB": 1.42,
+      "contextLength": 2048,
+      "engineCtx": 2048,
+      "slots": 1,
+      "kvType": "q8_0",
+      "breakdownMiB": {
+        "total": 1356,
+        "model": 1252,
+        "context": 34,
+        "compute": 70
+      }
+    },
+    {
+      "kv": "q8_0",
+      "numCtx": 4096,
+      "sizeGB": 1.46,
+      "contextLength": 4096,
+      "engineCtx": 4096,
+      "slots": 1,
+      "kvType": "q8_0",
+      "breakdownMiB": {
+        "total": 1392,
+        "model": 1252,
+        "context": 68,
+        "compute": 72
+      }
+    },
+    {
+      "kv": "q8_0",
+      "numCtx": 8192,
+      "sizeGB": 1.62,
+      "contextLength": 8192,
+      "engineCtx": 8192,
+      "slots": 1,
+      "kvType": "q8_0",
+      "breakdownMiB": {
+        "total": 1540,
+        "model": 1252,
+        "context": 136,
+        "compute": 152
+      }
+    },
+    {
+      "kv": "q8_0",
+      "numCtx": 16384,
+      "sizeGB": 1.78,
+      "contextLength": 16384,
+      "engineCtx": 16384,
+      "slots": 1,
+      "kvType": "q8_0",
+      "breakdownMiB": {
+        "total": 1692,
+        "model": 1252,
+        "context": 272,
+        "compute": 168
+      }
+    },
+    {
+      "kv": "q8_0",
+      "numCtx": 32768,
+      "sizeGB": 2.09,
+      "contextLength": 32768,
+      "engineCtx": 32768,
+      "slots": 1,
+      "kvType": "q8_0",
+      "breakdownMiB": {
+        "total": 1996,
+        "model": 1252,
+        "context": 544,
+        "compute": 200
+      }
+    }
+  ],
+  "waiting": [
+    {
+      "parallel": 1,
+      "run": 1,
+      "users": 1,
+      "loaded": {
+        "sizeGB": 1.74,
+        "contextLength": 8192,
+        "engineCtx": 8192,
+        "slots": 1,
+        "kvType": "f16",
+        "breakdownMiB": {
+          "total": 1660,
+          "model": 1252,
+          "context": 256,
+          "compute": 152
+        }
+      },
+      "answers": [
+        {
+          "firstTokenS": 2.9,
+          "totalS": 15.4,
+          "tokens": 200,
+          "promptTokens": 159
+        }
+      ]
+    },
+    {
+      "parallel": 1,
+      "run": 1,
+      "users": 2,
+      "loaded": {
+        "sizeGB": 1.74,
+        "contextLength": 8192,
+        "engineCtx": 8192,
+        "slots": 1,
+        "kvType": "f16",
+        "breakdownMiB": {
+          "total": 1660,
+          "model": 1252,
+          "context": 256,
+          "compute": 152
+        }
+      },
+      "answers": [
+        {
+          "firstTokenS": 3,
+          "totalS": 15.6,
+          "tokens": 200,
+          "promptTokens": 159
+        },
+        {
+          "firstTokenS": 18.5,
+          "totalS": 31.1,
+          "tokens": 200,
+          "promptTokens": 159
+        }
+      ]
+    },
+    {
+      "parallel": 1,
+      "run": 1,
+      "users": 3,
+      "loaded": {
+        "sizeGB": 1.74,
+        "contextLength": 8192,
+        "engineCtx": 8192,
+        "slots": 1,
+        "kvType": "f16",
+        "breakdownMiB": {
+          "total": 1660,
+          "model": 1252,
+          "context": 256,
+          "compute": 152
+        }
+      },
+      "answers": [
+        {
+          "firstTokenS": 3,
+          "totalS": 15.5,
+          "tokens": 200,
+          "promptTokens": 159
+        },
+        {
+          "firstTokenS": 18.4,
+          "totalS": 31,
+          "tokens": 200,
+          "promptTokens": 159
+        },
+        {
+          "firstTokenS": 33.9,
+          "totalS": 46.9,
+          "tokens": 200,
+          "promptTokens": 159
+        }
+      ]
+    },
+    {
+      "parallel": 1,
+      "run": 1,
+      "users": 4,
+      "loaded": {
+        "sizeGB": 1.74,
+        "contextLength": 8192,
+        "engineCtx": 8192,
+        "slots": 1,
+        "kvType": "f16",
+        "breakdownMiB": {
+          "total": 1660,
+          "model": 1252,
+          "context": 256,
+          "compute": 152
+        }
+      },
+      "answers": [
+        {
+          "firstTokenS": 3.2,
+          "totalS": 15.7,
+          "tokens": 200,
+          "promptTokens": 159
+        },
+        {
+          "firstTokenS": 18.6,
+          "totalS": 31.1,
+          "tokens": 200,
+          "promptTokens": 159
+        },
+        {
+          "firstTokenS": 34.1,
+          "totalS": 46.9,
+          "tokens": 200,
+          "promptTokens": 159
+        },
+        {
+          "firstTokenS": 49.9,
+          "totalS": 62.4,
+          "tokens": 200,
+          "promptTokens": 159
+        }
+      ]
+    },
+    {
+      "parallel": 2,
+      "run": 1,
+      "users": 1,
+      "loaded": {
+        "sizeGB": 2.01,
+        "contextLength": 8192,
+        "engineCtx": 16384,
+        "slots": 2,
+        "kvType": "f16",
+        "breakdownMiB": {
+          "total": 1916,
+          "model": 1252,
+          "context": 512,
+          "compute": 152
+        }
+      },
+      "answers": [
+        {
+          "firstTokenS": 2.7,
+          "totalS": 15.1,
+          "tokens": 200,
+          "promptTokens": 159
+        }
+      ]
+    },
+    {
+      "parallel": 2,
+      "run": 1,
+      "users": 2,
+      "loaded": {
+        "sizeGB": 2.01,
+        "contextLength": 8192,
+        "engineCtx": 16384,
+        "slots": 2,
+        "kvType": "f16",
+        "breakdownMiB": {
+          "total": 1916,
+          "model": 1252,
+          "context": 512,
+          "compute": 152
+        }
+      },
+      "answers": [
+        {
+          "firstTokenS": 5.7,
+          "totalS": 22.2,
+          "tokens": 200,
+          "promptTokens": 159
+        },
+        {
+          "firstTokenS": 5.7,
+          "totalS": 22.2,
+          "tokens": 200,
+          "promptTokens": 159
+        }
+      ]
+    },
+    {
+      "parallel": 2,
+      "run": 1,
+      "users": 3,
+      "loaded": {
+        "sizeGB": 2.01,
+        "contextLength": 8192,
+        "engineCtx": 16384,
+        "slots": 2,
+        "kvType": "f16",
+        "breakdownMiB": {
+          "total": 1916,
+          "model": 1252,
+          "context": 512,
+          "compute": 152
+        }
+      },
+      "answers": [
+        {
+          "firstTokenS": 5.3,
+          "totalS": 22.4,
+          "tokens": 200,
+          "promptTokens": 159
+        },
+        {
+          "firstTokenS": 25.4,
+          "totalS": 38.1,
+          "tokens": 200,
+          "promptTokens": 159
+        },
+        {
+          "firstTokenS": 5.3,
+          "totalS": 22.4,
+          "tokens": 200,
+          "promptTokens": 159
+        }
+      ]
+    },
+    {
+      "parallel": 2,
+      "run": 1,
+      "users": 4,
+      "loaded": {
+        "sizeGB": 2.01,
+        "contextLength": 8192,
+        "engineCtx": 16384,
+        "slots": 2,
+        "kvType": "f16",
+        "breakdownMiB": {
+          "total": 1916,
+          "model": 1252,
+          "context": 512,
+          "compute": 152
+        }
+      },
+      "answers": [
+        {
+          "firstTokenS": 5.3,
+          "totalS": 21.7,
+          "tokens": 200,
+          "promptTokens": 159
+        },
+        {
+          "firstTokenS": 5.3,
+          "totalS": 21.7,
+          "tokens": 200,
+          "promptTokens": 159
+        },
+        {
+          "firstTokenS": 27.1,
+          "totalS": 43.6,
+          "tokens": 200,
+          "promptTokens": 159
+        },
+        {
+          "firstTokenS": 27.1,
+          "totalS": 43.6,
+          "tokens": 200,
+          "promptTokens": 159
+        }
+      ]
+    }
+  ]
+}

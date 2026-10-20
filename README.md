@@ -70,5 +70,24 @@ node note-test.mjs 10 llama3.1:8b              # or a chosen list
 Each wrong or unclear answer is kept raw, with the wording of the note, in `notes/results/`.
 `results/smoke/`: one run of `llama3.2:1b` (it answered "no" to all 100 notes).
 
+## context
+
+What does a bigger context cost in memory, and what does a second user cost in waiting time? Part 1
+loads the model with `num_ctx` 2048 to 32768, with the KV cache in f16 (default) then `q8_0`, and
+reads the memory used. Part 2 sends 1, 2, 3, then 4 requests at the same second, with
+`OLLAMA_NUM_PARALLEL` at 1 (default) then 2, and times the wait before each answer starts.
+
+```bash
+cd context
+node context-test.mjs 3                        # 3 runs of part 2, llama3.2:3b
+node context-test.mjs 3 llama3.1:8b            # or another model
+```
+
+The script starts its own Ollama server on port 11500 for each configuration (the settings are
+environment variables, so they need a server restart) and stops it afterwards; your Ollama on 11434
+is left alone. Each server log is saved with the results: it shows the command Ollama gives its
+engine (`-c` context, `-np` parallel slots, `--cache-type-k`) and the engine's memory breakdown.
+`results/smoke/`: one run of `llama3.2:1b`.
+
 Method inspired by the "Kit IA locale" masterclass on local AI agents
 ([video](https://www.youtube.com/watch?v=MNFZoZUExSQ)).
