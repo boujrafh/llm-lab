@@ -101,7 +101,11 @@ for (const model of models) {
   if (!tags.find((t) => t.name === model)) { console.error(`skip ${model}: not installed`); continue; }
   const show = await api('/api/show', { model });
   const temperature = /temperature\s+([\d.]+)/.exec(show.parameters ?? '')?.[1] ?? 'Ollama default (0.8)';
-  const row = { model, temperature, runs: [] };
+  // A reasoning model (gpt-oss…) writes its reasoning before the answer, and those tokens count
+  // against num_predict: 10 tokens would cut it off before it says yes or no.
+  const thinking = (show.capabilities ?? []).includes('thinking');
+  const numPredict = thinking ? 2048 : 10;
+  const row = { model, temperature, thinking, runs: [] };
   results.push(row);
 
   for (let run = 1; run <= RUNS; run++) {
@@ -114,7 +118,7 @@ for (const model of models) {
         model,
         prompt: question + notes[i],
         stream: false,
-        options: { seed: 1000 + run, num_predict: 10 },
+        options: { seed: 1000 + run, num_predict: numPredict },
       });
       const raw = (r.response ?? '').trim();
       const answer = readAnswer(raw);
