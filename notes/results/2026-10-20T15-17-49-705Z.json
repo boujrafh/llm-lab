@@ -1,0 +1,3466 @@
+{
+  "date": "2026-10-20T15:17:49.705Z",
+  "machine": {
+    "cpu": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+    "threads": 8,
+    "ramGB": 34,
+    "platform": "win32 10.0.26300"
+  },
+  "ollama": "0.40.6",
+  "runs": 10,
+  "callsPerRun": 100,
+  "expected": {
+    "count": 18,
+    "clients": [
+      "Client 005",
+      "Client 011",
+      "Client 016",
+      "Client 023",
+      "Client 026",
+      "Client 029",
+      "Client 037",
+      "Client 052",
+      "Client 053",
+      "Client 059",
+      "Client 068",
+      "Client 069",
+      "Client 070",
+      "Client 072",
+      "Client 076",
+      "Client 090",
+      "Client 092",
+      "Client 100"
+    ]
+  },
+  "question": "QUESTION: does the client note below say that the client complained about a late delivery? Answer with one word: yes or no.\n\n",
+  "models": [
+    {
+      "model": "llama3.2:1b",
+      "temperature": "Ollama default (0.8)",
+      "runs": [
+        {
+          "run": 1,
+          "seconds": 157,
+          "count": 0,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 011",
+            "Client 016",
+            "Client 023",
+            "Client 026",
+            "Client 029",
+            "Client 037",
+            "Client 052",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 069",
+            "Client 070",
+            "Client 072",
+            "Client 076",
+            "Client 090",
+            "Client 092",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 11,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 23,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 29,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 52,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 76,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "seconds": 45,
+          "count": 0,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 011",
+            "Client 016",
+            "Client 023",
+            "Client 026",
+            "Client 029",
+            "Client 037",
+            "Client 052",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 069",
+            "Client 070",
+            "Client 072",
+            "Client 076",
+            "Client 090",
+            "Client 092",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 11,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 23,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 29,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 52,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 76,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "seconds": 20,
+          "count": 0,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 011",
+            "Client 016",
+            "Client 023",
+            "Client 026",
+            "Client 029",
+            "Client 037",
+            "Client 052",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 069",
+            "Client 070",
+            "Client 072",
+            "Client 076",
+            "Client 090",
+            "Client 092",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 11,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 23,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 29,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 52,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 76,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 4,
+          "seconds": 16,
+          "count": 0,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 011",
+            "Client 016",
+            "Client 023",
+            "Client 026",
+            "Client 029",
+            "Client 037",
+            "Client 052",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 069",
+            "Client 070",
+            "Client 072",
+            "Client 076",
+            "Client 090",
+            "Client 092",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 11,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 23,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 29,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 52,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 76,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 5,
+          "seconds": 20,
+          "count": 0,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 011",
+            "Client 016",
+            "Client 023",
+            "Client 026",
+            "Client 029",
+            "Client 037",
+            "Client 052",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 069",
+            "Client 070",
+            "Client 072",
+            "Client 076",
+            "Client 090",
+            "Client 092",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 11,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 23,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 29,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 52,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 76,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 6,
+          "seconds": 18,
+          "count": 0,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 011",
+            "Client 016",
+            "Client 023",
+            "Client 026",
+            "Client 029",
+            "Client 037",
+            "Client 052",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 069",
+            "Client 070",
+            "Client 072",
+            "Client 076",
+            "Client 090",
+            "Client 092",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 11,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 23,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 29,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 52,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 76,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 7,
+          "seconds": 17,
+          "count": 84,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 068"
+          ],
+          "extra": [
+            "Client 001",
+            "Client 003",
+            "Client 004",
+            "Client 006",
+            "Client 007",
+            "Client 008",
+            "Client 009",
+            "Client 010",
+            "Client 012",
+            "Client 013",
+            "Client 014",
+            "Client 015",
+            "Client 017",
+            "Client 018",
+            "Client 019",
+            "Client 020",
+            "Client 021",
+            "Client 024",
+            "Client 025",
+            "Client 027",
+            "Client 028",
+            "Client 031",
+            "Client 032",
+            "Client 033",
+            "Client 034",
+            "Client 035",
+            "Client 039",
+            "Client 040",
+            "Client 043",
+            "Client 045",
+            "Client 046",
+            "Client 047",
+            "Client 048",
+            "Client 049",
+            "Client 050",
+            "Client 051",
+            "Client 054",
+            "Client 055",
+            "Client 056",
+            "Client 057",
+            "Client 058",
+            "Client 060",
+            "Client 061",
+            "Client 062",
+            "Client 063",
+            "Client 064",
+            "Client 065",
+            "Client 066",
+            "Client 067",
+            "Client 073",
+            "Client 075",
+            "Client 077",
+            "Client 078",
+            "Client 079",
+            "Client 081",
+            "Client 083",
+            "Client 084",
+            "Client 085",
+            "Client 087",
+            "Client 089",
+            "Client 091",
+            "Client 093",
+            "Client 094",
+            "Client 095",
+            "Client 096",
+            "Client 097",
+            "Client 099"
+          ],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 1,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 3,
+              "late": false,
+              "topic": "asked whether the training session can move to a Thursday afternoon",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 4,
+              "late": false,
+              "topic": "reported that the new dashboard is easier to read than the old one",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 6,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 7,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 8,
+              "late": false,
+              "topic": "requested a summary of open tickets before the quarterly review",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 9,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 10,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 12,
+              "late": false,
+              "topic": "raised a question about data retention for archived projects",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 13,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 14,
+              "late": false,
+              "topic": "reported that the new dashboard is easier to read than the old one",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 15,
+              "late": false,
+              "topic": "confirmed the meeting notes and approved the revised quote",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 17,
+              "late": false,
+              "topic": "reported that the new dashboard is easier to read than the old one",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 18,
+              "late": false,
+              "topic": "confirmed the meeting notes and approved the revised quote",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 19,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 20,
+              "late": false,
+              "topic": "confirmed the meeting notes and approved the revised quote",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 21,
+              "late": false,
+              "topic": "confirmed the meeting notes and approved the revised quote",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 24,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 25,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 27,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 28,
+              "late": false,
+              "topic": "asked whether the training session can move to a Thursday afternoon",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 31,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 32,
+              "late": false,
+              "topic": "reported that the new dashboard is easier to read than the old one",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 33,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 34,
+              "late": false,
+              "topic": "asked whether the training session can move to a Thursday afternoon",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 35,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 39,
+              "late": false,
+              "topic": "reported that the new dashboard is easier to read than the old one",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 40,
+              "late": false,
+              "topic": "confirmed the meeting notes and approved the revised quote",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 43,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 45,
+              "late": false,
+              "topic": "confirmed the meeting notes and approved the revised quote",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 46,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 47,
+              "late": false,
+              "topic": "reported that the new dashboard is easier to read than the old one",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 48,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 49,
+              "late": false,
+              "topic": "requested a summary of open tickets before the quarterly review",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 50,
+              "late": false,
+              "topic": "requested a summary of open tickets before the quarterly review",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 51,
+              "late": false,
+              "topic": "wants to add two users to the support contract next month",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 54,
+              "late": false,
+              "topic": "asked whether the training session can move to a Thursday afternoon",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 55,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 56,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 57,
+              "late": false,
+              "topic": "wants to add two users to the support contract next month",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 58,
+              "late": false,
+              "topic": "reported that the new dashboard is easier to read than the old one",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 60,
+              "late": false,
+              "topic": "requested a summary of open tickets before the quarterly review",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 61,
+              "late": false,
+              "topic": "asked whether the training session can move to a Thursday afternoon",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 62,
+              "late": false,
+              "topic": "asked whether the training session can move to a Thursday afternoon",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 63,
+              "late": false,
+              "topic": "reported that the new dashboard is easier to read than the old one",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 64,
+              "late": false,
+              "topic": "raised a question about data retention for archived projects",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 65,
+              "late": false,
+              "topic": "asked whether the training session can move to a Thursday afternoon",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 66,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 67,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 73,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 75,
+              "late": false,
+              "topic": "asked whether the training session can move to a Thursday afternoon",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 77,
+              "late": false,
+              "topic": "wants to add two users to the support contract next month",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 78,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 79,
+              "late": false,
+              "topic": "reported that the new dashboard is easier to read than the old one",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 81,
+              "late": false,
+              "topic": "reported that the new dashboard is easier to read than the old one",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 83,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 84,
+              "late": false,
+              "topic": "confirmed the meeting notes and approved the revised quote",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 85,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 87,
+              "late": false,
+              "topic": "confirmed the meeting notes and approved the revised quote",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 89,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 91,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 93,
+              "late": false,
+              "topic": "asked whether the training session can move to a Thursday afternoon",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 94,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 95,
+              "late": false,
+              "topic": "raised a question about data retention for archived projects",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 96,
+              "late": false,
+              "topic": "thanked the team for the quick answer on the VPN configuration",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 97,
+              "late": false,
+              "topic": "reported that the new dashboard is easier to read than the old one",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 99,
+              "late": false,
+              "topic": "asked whether the training session can move to a Thursday afternoon",
+              "answer": "yes",
+              "raw": "Yes"
+            }
+          ]
+        },
+        {
+          "run": 8,
+          "seconds": 17,
+          "count": 8,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 011",
+            "Client 016",
+            "Client 023",
+            "Client 026",
+            "Client 029",
+            "Client 037",
+            "Client 052",
+            "Client 053",
+            "Client 059",
+            "Client 069",
+            "Client 070",
+            "Client 072",
+            "Client 076",
+            "Client 090",
+            "Client 092",
+            "Client 100"
+          ],
+          "extra": [
+            "Client 042",
+            "Client 044",
+            "Client 080",
+            "Client 082",
+            "Client 085",
+            "Client 086",
+            "Client 088"
+          ],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 11,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 23,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 29,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 42,
+              "late": false,
+              "topic": "confirmed the meeting notes and approved the revised quote",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 44,
+              "late": false,
+              "topic": "confirmed the meeting notes and approved the revised quote",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 52,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 76,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 80,
+              "late": false,
+              "topic": "confirmed the meeting notes and approved the revised quote",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 82,
+              "late": false,
+              "topic": "requested a summary of open tickets before the quarterly review",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 85,
+              "late": false,
+              "topic": "asked for a copy of last quarter invoice and the payment terms",
+              "answer": "yes",
+              "raw": "YES"
+            },
+            {
+              "note": 86,
+              "late": false,
+              "topic": "requested a summary of open tickets before the quarterly review",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 88,
+              "late": false,
+              "topic": "confirmed the meeting notes and approved the revised quote",
+              "answer": "yes",
+              "raw": "Yes"
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "NO"
+            }
+          ]
+        },
+        {
+          "run": 9,
+          "seconds": 16,
+          "count": 0,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 011",
+            "Client 016",
+            "Client 023",
+            "Client 026",
+            "Client 029",
+            "Client 037",
+            "Client 052",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 069",
+            "Client 070",
+            "Client 072",
+            "Client 076",
+            "Client 090",
+            "Client 092",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 11,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 23,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 29,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 52,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 76,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 10,
+          "seconds": 16,
+          "count": 0,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 011",
+            "Client 016",
+            "Client 023",
+            "Client 026",
+            "Client 029",
+            "Client 037",
+            "Client 052",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 069",
+            "Client 070",
+            "Client 072",
+            "Client 076",
+            "Client 090",
+            "Client 092",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 11,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 23,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 29,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 52,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 76,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "NO"
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "NO"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "countCorrect": "0/10",
+        "countAnswers": "0, 84, 8",
+        "listExact": "0/10",
+        "maxMissing": 18,
+        "maxWrongIds": 67,
+        "medianSecondsPerRun": 18
+      },
+      "missedByWording": {
+        "complained that the delivery arrived nine days after the promised date": 45,
+        "is unhappy because the shipment was late again this month": 45,
+        "says the order was delivered late and the site team lost a full day": 72
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "temperature": "Ollama default (0.8)",
+      "runs": [
+        {
+          "run": 1,
+          "seconds": 197,
+          "count": 11,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 016",
+            "Client 026",
+            "Client 053",
+            "Client 059",
+            "Client 070",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "seconds": 37,
+          "count": 8,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 016",
+            "Client 026",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 070",
+            "Client 072",
+            "Client 090",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "seconds": 37,
+          "count": 8,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 016",
+            "Client 026",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 070",
+            "Client 072",
+            "Client 090",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            }
+          ]
+        },
+        {
+          "run": 4,
+          "seconds": 36,
+          "count": 8,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 016",
+            "Client 026",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 070",
+            "Client 072",
+            "Client 090",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            }
+          ]
+        },
+        {
+          "run": 5,
+          "seconds": 37,
+          "count": 8,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 016",
+            "Client 026",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 070",
+            "Client 072",
+            "Client 090",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            }
+          ]
+        },
+        {
+          "run": 6,
+          "seconds": 36,
+          "count": 8,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 016",
+            "Client 026",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 070",
+            "Client 072",
+            "Client 090",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            }
+          ]
+        },
+        {
+          "run": 7,
+          "seconds": 37,
+          "count": 10,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 011",
+            "Client 023",
+            "Client 029",
+            "Client 037",
+            "Client 052",
+            "Client 069",
+            "Client 076",
+            "Client 092"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 11,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 23,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 29,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 52,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 76,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            }
+          ]
+        },
+        {
+          "run": 8,
+          "seconds": 37,
+          "count": 10,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 011",
+            "Client 023",
+            "Client 029",
+            "Client 037",
+            "Client 052",
+            "Client 069",
+            "Client 076",
+            "Client 092"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 11,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 23,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 29,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 52,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 76,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            }
+          ]
+        },
+        {
+          "run": 9,
+          "seconds": 36,
+          "count": 8,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 016",
+            "Client 026",
+            "Client 053",
+            "Client 059",
+            "Client 068",
+            "Client 070",
+            "Client 072",
+            "Client 090",
+            "Client 100"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 26,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 53,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 59,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 68,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 70,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 72,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 100,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No."
+            }
+          ]
+        },
+        {
+          "run": 10,
+          "seconds": 37,
+          "count": 10,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 011",
+            "Client 023",
+            "Client 029",
+            "Client 037",
+            "Client 052",
+            "Client 069",
+            "Client 076",
+            "Client 092"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 11,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 23,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 29,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 52,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 76,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No."
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No."
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "countCorrect": "0/10",
+        "countAnswers": "11, 8, 10",
+        "listExact": "0/10",
+        "maxMissing": 10,
+        "maxWrongIds": 0,
+        "medianSecondsPerRun": 37
+      },
+      "missedByWording": {
+        "complained that the delivery arrived nine days after the promised date": 34,
+        "is unhappy because the shipment was late again this month": 25,
+        "says the order was delivered late and the site team lost a full day": 32
+      }
+    },
+    {
+      "model": "qwen2.5:3b",
+      "temperature": "Ollama default (0.8)",
+      "runs": [
+        {
+          "run": 1,
+          "seconds": 189,
+          "count": 15,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 016",
+            "Client 092"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "seconds": 63,
+          "count": 15,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 069",
+            "Client 092"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "seconds": 28,
+          "count": 15,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 069",
+            "Client 092"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 4,
+          "seconds": 27,
+          "count": 15,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 069",
+            "Client 092"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 5,
+          "seconds": 29,
+          "count": 15,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 069",
+            "Client 092"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 6,
+          "seconds": 28,
+          "count": 15,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 069",
+            "Client 092"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 7,
+          "seconds": 28,
+          "count": 16,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 011",
+            "Client 037"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 11,
+              "late": true,
+              "topic": "is unhappy because the shipment was late again this month",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 8,
+          "seconds": 29,
+          "count": 16,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 037",
+            "Client 092"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 37,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "no"
+            }
+          ]
+        },
+        {
+          "run": 9,
+          "seconds": 28,
+          "count": 15,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 005",
+            "Client 069",
+            "Client 092"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 5,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 69,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 10,
+          "seconds": 29,
+          "count": 15,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 016",
+            "Client 052",
+            "Client 092"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 16,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 52,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            },
+            {
+              "note": 92,
+              "late": true,
+              "topic": "says the order was delivered late and the site team lost a full day",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "countCorrect": "0/10",
+        "countAnswers": "15, 16",
+        "listExact": "0/10",
+        "maxMissing": 3,
+        "maxWrongIds": 0,
+        "medianSecondsPerRun": 29
+      },
+      "missedByWording": {
+        "complained that the delivery arrived nine days after the promised date": 0,
+        "is unhappy because the shipment was late again this month": 1,
+        "says the order was delivered late and the site team lost a full day": 27
+      }
+    },
+    {
+      "model": "llama3.1:8b",
+      "temperature": "Ollama default (0.8)",
+      "runs": [
+        {
+          "run": 1,
+          "seconds": 468,
+          "count": 18,
+          "correct": true,
+          "exact": true,
+          "missing": [],
+          "extra": [],
+          "unclear": 0,
+          "odd": []
+        },
+        {
+          "run": 2,
+          "seconds": 71,
+          "count": 18,
+          "correct": true,
+          "exact": true,
+          "missing": [],
+          "extra": [],
+          "unclear": 0,
+          "odd": []
+        },
+        {
+          "run": 3,
+          "seconds": 57,
+          "count": 18,
+          "correct": true,
+          "exact": true,
+          "missing": [],
+          "extra": [],
+          "unclear": 0,
+          "odd": []
+        },
+        {
+          "run": 4,
+          "seconds": 74,
+          "count": 18,
+          "correct": true,
+          "exact": true,
+          "missing": [],
+          "extra": [],
+          "unclear": 0,
+          "odd": []
+        },
+        {
+          "run": 5,
+          "seconds": 74,
+          "count": 18,
+          "correct": true,
+          "exact": true,
+          "missing": [],
+          "extra": [],
+          "unclear": 0,
+          "odd": []
+        },
+        {
+          "run": 6,
+          "seconds": 52,
+          "count": 18,
+          "correct": true,
+          "exact": true,
+          "missing": [],
+          "extra": [],
+          "unclear": 0,
+          "odd": []
+        },
+        {
+          "run": 7,
+          "seconds": 54,
+          "count": 17,
+          "correct": false,
+          "exact": false,
+          "missing": [
+            "Client 090"
+          ],
+          "extra": [],
+          "unclear": 0,
+          "odd": [
+            {
+              "note": 90,
+              "late": true,
+              "topic": "complained that the delivery arrived nine days after the promised date",
+              "answer": "no",
+              "raw": "No"
+            }
+          ]
+        },
+        {
+          "run": 8,
+          "seconds": 54,
+          "count": 18,
+          "correct": true,
+          "exact": true,
+          "missing": [],
+          "extra": [],
+          "unclear": 0,
+          "odd": []
+        },
+        {
+          "run": 9,
+          "seconds": 73,
+          "count": 18,
+          "correct": true,
+          "exact": true,
+          "missing": [],
+          "extra": [],
+          "unclear": 0,
+          "odd": []
+        },
+        {
+          "run": 10,
+          "seconds": 60,
+          "count": 18,
+          "correct": true,
+          "exact": true,
+          "missing": [],
+          "extra": [],
+          "unclear": 0,
+          "odd": []
+        }
+      ],
+      "summary": {
+        "countCorrect": "9/10",
+        "countAnswers": "18, 17",
+        "listExact": "9/10",
+        "maxMissing": 1,
+        "maxWrongIds": 0,
+        "medianSecondsPerRun": 71
+      },
+      "missedByWording": {
+        "complained that the delivery arrived nine days after the promised date": 1,
+        "is unhappy because the shipment was late again this month": 0,
+        "says the order was delivered late and the site team lost a full day": 0
+      }
+    }
+  ]
+}
