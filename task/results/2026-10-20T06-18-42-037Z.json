@@ -1,0 +1,272 @@
+{
+  "date": "2026-10-20T06:18:42.037Z",
+  "machine": {
+    "cpu": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+    "threads": 8,
+    "ramGB": 34,
+    "platform": "win32 10.0.26300"
+  },
+  "ollama": "0.40.6",
+  "numCtx": 8192,
+  "runsPerTask": 10,
+  "expected": {
+    "count": 18,
+    "clients": [
+      "Client 005",
+      "Client 011",
+      "Client 016",
+      "Client 023",
+      "Client 026",
+      "Client 029",
+      "Client 037",
+      "Client 052",
+      "Client 053",
+      "Client 059",
+      "Client 068",
+      "Client 069",
+      "Client 070",
+      "Client 072",
+      "Client 076",
+      "Client 090",
+      "Client 092",
+      "Client 100"
+    ]
+  },
+  "tasks": {
+    "count": "TASK: how many distinct clients complained about a late delivery? Answer with the number only.",
+    "list": "TASK: list every client who complained about a late delivery, one per line, in the form \"Client 000\". Include all of them and nothing else."
+  },
+  "models": [
+    {
+      "model": "gpt-oss:20b",
+      "temperature": "1",
+      "firstPromptTokens": 5505,
+      "count": [
+        {
+          "run": 1,
+          "seconds": 534,
+          "answer": "12",
+          "number": 12,
+          "correct": false
+        },
+        {
+          "run": 2,
+          "seconds": 67,
+          "answer": "17",
+          "number": 17,
+          "correct": false
+        },
+        {
+          "run": 3,
+          "seconds": 184,
+          "answer": "13",
+          "number": 13,
+          "correct": false
+        },
+        {
+          "run": 4,
+          "seconds": 51,
+          "answer": "15",
+          "number": 15,
+          "correct": false
+        },
+        {
+          "run": 5,
+          "seconds": 136,
+          "answer": "15",
+          "number": 15,
+          "correct": false
+        },
+        {
+          "run": 6,
+          "seconds": 16,
+          "answer": "13",
+          "number": 13,
+          "correct": false
+        },
+        {
+          "run": 7,
+          "seconds": 42,
+          "answer": "14",
+          "number": 14,
+          "correct": false
+        },
+        {
+          "run": 8,
+          "seconds": 67,
+          "answer": "17",
+          "number": 17,
+          "correct": false
+        },
+        {
+          "run": 9,
+          "seconds": 95,
+          "answer": "12",
+          "number": 12,
+          "correct": false
+        },
+        {
+          "run": 10,
+          "seconds": 294,
+          "answer": "7",
+          "number": 7,
+          "correct": false
+        }
+      ],
+      "list": [
+        {
+          "run": 1,
+          "seconds": 363,
+          "answer": "Client 005  \nClient 016  \nClient 023  \nClient 029  \nClient 037  \nClient 052  \nClient 059  \nClient 068  \nClient 069  \nClient 070  \nClient 072  \nClient 076  \nClient 053  \nClient 090  \nClient 100",
+          "listed": 15,
+          "missing": [
+            "Client 011",
+            "Client 026",
+            "Client 092"
+          ],
+          "extra": [],
+          "exact": false
+        },
+        {
+          "run": 2,
+          "seconds": 34,
+          "answer": "Client 005  \nClient 016  \nClient 023  \nClient 026  \nClient 037  \nClient 052  \nClient 053  \nClient 069  \nClient 070  \nClient 076  \nClient 092  \nClient 100",
+          "listed": 12,
+          "missing": [
+            "Client 011",
+            "Client 029",
+            "Client 059",
+            "Client 068",
+            "Client 072",
+            "Client 090"
+          ],
+          "extra": [],
+          "exact": false
+        },
+        {
+          "run": 3,
+          "seconds": 90,
+          "answer": "Client 005  \nClient 016  \nClient 026  \nClient 029  \nClient 037  \nClient 052  \nClient 053  \nClient 069  \nClient 070  \nClient 090  \nClient 092  \nClient 100",
+          "listed": 12,
+          "missing": [
+            "Client 011",
+            "Client 023",
+            "Client 059",
+            "Client 068",
+            "Client 072",
+            "Client 076"
+          ],
+          "extra": [],
+          "exact": false
+        },
+        {
+          "run": 4,
+          "seconds": 117,
+          "answer": "Client 005  \nClient 016  \nClient 026  \nClient 037  \nClient 052  \nClient 053  \nClient 059  \nClient 068  \nClient 070  \nClient 076  \nClient 090  \nClient 100",
+          "listed": 12,
+          "missing": [
+            "Client 011",
+            "Client 023",
+            "Client 029",
+            "Client 069",
+            "Client 072",
+            "Client 092"
+          ],
+          "extra": [],
+          "exact": false
+        },
+        {
+          "run": 5,
+          "seconds": 142,
+          "answer": "Client 005\nClient 016\nClient 023\nClient 029\nClient 052\nClient 069\nClient 070\nClient 076\nClient 059\nClient 072\nClient 068\nClient 090\nClient 100",
+          "listed": 13,
+          "missing": [
+            "Client 011",
+            "Client 026",
+            "Client 037",
+            "Client 053",
+            "Client 092"
+          ],
+          "extra": [],
+          "exact": false
+        },
+        {
+          "run": 6,
+          "seconds": 247,
+          "answer": "Client 005  \nClient 016  \nClient 023  \nClient 026  \nClient 029  \nClient 037  \nClient 052  \nClient 053  \nClient 069  \nClient 070  \nClient 059  \nClient 068  \nClient 072  \nClient 076  \nClient 090  \nClient 100",
+          "listed": 16,
+          "missing": [
+            "Client 011",
+            "Client 092"
+          ],
+          "extra": [],
+          "exact": false
+        },
+        {
+          "run": 7,
+          "seconds": 153,
+          "answer": "Client 005  \nClient 016  \nClient 023  \nClient 029  \nClient 037  \nClient 052  \nClient 059  \nClient 068  \nClient 070  \nClient 076  \nClient 092  \nClient 100  \nClient 026  \nClient 053  \nClient 090",
+          "listed": 15,
+          "missing": [
+            "Client 011",
+            "Client 069",
+            "Client 072"
+          ],
+          "extra": [],
+          "exact": false
+        },
+        {
+          "run": 8,
+          "seconds": 100,
+          "answer": "Client 005  \nClient 016  \nClient 026  \nClient 029  \nClient 037  \nClient 052  \nClient 053  \nClient 059  \nClient 068  \nClient 069  \nClient 070  \nClient 072  \nClient 076  \nClient 090  \nClient 100",
+          "listed": 15,
+          "missing": [
+            "Client 011",
+            "Client 023",
+            "Client 092"
+          ],
+          "extra": [],
+          "exact": false
+        },
+        {
+          "run": 9,
+          "seconds": 399,
+          "answer": "Client 005  \nClient 016  \nClient 026  \nClient 037  \nClient 052  \nClient 059  \nClient 068  \nClient 070  \nClient 092  \nClient 100",
+          "listed": 10,
+          "missing": [
+            "Client 011",
+            "Client 023",
+            "Client 029",
+            "Client 053",
+            "Client 069",
+            "Client 072",
+            "Client 076",
+            "Client 090"
+          ],
+          "extra": [],
+          "exact": false
+        },
+        {
+          "run": 10,
+          "seconds": 126,
+          "answer": "Client 005\nClient 016\nClient 023\nClient 026\nClient 029\nClient 037\nClient 052\nClient 053\nClient 059\nClient 068\nClient 069\nClient 070\nClient 076\nClient 090\nClient 100",
+          "listed": 15,
+          "missing": [
+            "Client 011",
+            "Client 072",
+            "Client 092"
+          ],
+          "extra": [],
+          "exact": false
+        }
+      ],
+      "summary": {
+        "countCorrect": "0/10",
+        "countAnswers": "12, 17, 13, 15, 14, 7",
+        "listExact": "0/10",
+        "listMedianRightIds": 15,
+        "listMaxWrongIds": 0
+      }
+    }
+  ]
+}
