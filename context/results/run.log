@@ -1,0 +1,40 @@
+memory  kv f16  num_ctx  2048: 2.33 GB (model 618 + context 224 + compute 80 MiB)
+memory  kv f16  num_ctx  4096: 2.57 GB (model 618 + context 448 + compute 82 MiB)
+memory  kv f16  num_ctx  8192: 3.13 GB (model 618 + context 896 + compute 172 MiB)
+memory  kv f16  num_ctx 16384: 4.09 GB (model 618 + context 1792 + compute 188 MiB)
+memory  kv f16  num_ctx 32768: 6 GB (model 618 + context 3584 + compute 220 MiB)
+memory  kv q8_0 num_ctx  2048: 2.22 GB (model 618 + context 119 + compute 80 MiB)
+memory  kv q8_0 num_ctx  4096: 2.35 GB (model 618 + context 238 + compute 82 MiB)
+memory  kv q8_0 num_ctx  8192: 2.69 GB (model 618 + context 476 + compute 172 MiB)
+memory  kv q8_0 num_ctx 16384: 3.21 GB (model 618 + context 952 + compute 188 MiB)
+memory  kv q8_0 num_ctx 32768: 4.24 GB (model 618 + context 1904 + compute 220 MiB)
+
+NUM_PARALLEL=1: 3.13 GB loaded, engine context 8192 (1 slot(s))
+  run 1, 1 user(s): first word after 5.6 s; done after 28.7 s
+  run 1, 2 user(s): first word after 4.6 / 35.3 s; done after 29.7 / 65.7 s
+  run 1, 3 user(s): first word after 6.1 / 36.6 / 65.6 s; done after 32 / 60.8 / 91 s
+  run 1, 4 user(s): first word after 4.8 / 35.6 / 71.9 / 106.8 s; done after 29.3 / 65.6 / 101.4 / 140.8 s
+  run 2, 1 user(s): first word after 7.3 s; done after 35 s
+  run 2, 2 user(s): first word after 5.3 / 54.3 s; done after 47.3 / 93 s
+  run 2, 3 user(s): first word after 7 / 50.4 / 84.2 s; done after 44.8 / 77.4 / 124.9 s
+  run 2, 4 user(s): first word after 7.6 / 51.1 / 100.1 / 139.2 s; done after 43.9 / 93.1 / 132.4 / 174.1 s
+  run 3, 1 user(s): first word after 7 s; done after 40.3 s
+  run 3, 2 user(s): first word after 5.1 / 34.9 s; done after 29.9 / 60.5 s
+  run 3, 3 user(s): first word after 5.2 / 36.5 / 68.8 s; done after 30.2 / 63.7 / 95.2 s
+  run 3, 4 user(s): first word after 6.1 / 38.8 / 73.4 / 104.4 s; done after 32.9 / 67.5 / 98.9 / 132.7 s
+
+NUM_PARALLEL=2: 4.07 GB loaded, engine context 16384 (2 slot(s))
+  run 1, 1 user(s): first word after 6 s; done after 32.8 s
+  run 1, 2 user(s): first word after 11.7 / 11.7 s; done after 56.3 / 56.3 s
+  run 1, 3 user(s): first word after 10.3 / 10.3 / 60.3 s; done after 55.2 / 55.2 / 87.9 s
+  run 1, 4 user(s): first word after 10.5 / 10.5 / 66.1 / 66.1 s; done after 54.9 / 54.9 / 109.7 / 109.7 s
+  run 2, 1 user(s): first word after 5.9 s; done after 31.3 s
+  run 2, 2 user(s): first word after 10.8 / 10.8 s; done after 52.7 / 52.7 s
+  run 2, 3 user(s): first word after 9.9 / 9.9 / 58.8 s; done after 53.9 / 53.9 / 83.7 s
+  run 2, 4 user(s): first word after 10.2 / 10.2 / 61 / 61 s; done after 51.5 / 51.5 / 104.8 / 104.8 s
+  run 3, 1 user(s): first word after 5.1 s; done after 30.8 s
+  run 3, 2 user(s): first word after 10.9 / 10.9 s; done after 53.7 / 53.7 s
+  run 3, 3 user(s): first word after 11.7 / 11.7 / 64.9 s; done after 59.5 / 59.5 / 91 s
+  run 3, 4 user(s): first word after 10.2 / 10.2 / 67.5 / 67.5 s; done after 56.2 / 56.2 / 112.1 / 112.1 s
+
+Saved C:\Devops\llm-lab\context\results\2026-10-20T14-23-58-739Z.json

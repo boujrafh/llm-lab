@@ -86,10 +86,16 @@ const readEngine = () => {
   const text = readFileSync(logPath, 'utf8');
   const last = text.split('msg="starting llama-server"').at(-1);
   const arg = (flag) => last.match(new RegExp(`${flag} (\\S+)`))?.[1];
-  const mem = [...last.matchAll(/- Host\s*\|\s*(\d+)\s*=\s*(\d+)\s*\+\s*(\d+)\s*\+\s*(\d+)/g)].at(-1);
+  // One table per engine start, one row per memory pool. On a CPU the weights are split between
+  // "Host" and "CPU_REPACK" (weights rearranged for the CPU), so sum the rows of the last table.
+  const table = last.split('memory breakdown [MiB]').at(-1).split('\n').slice(1, 8);
+  const rows = table.map((l) => l.match(/- (\S+)\s*\|\s*(\d+)\s*=\s*(\d+)\s*\+\s*(\d+)\s*\+\s*(\d+)/)).filter(Boolean);
+  const sum = (i) => rows.reduce((s, r) => s + Number(r[i]), 0);
   return {
     engineCtx: Number(arg('-c')), slots: Number(arg('-np')), kvType: arg('--cache-type-k') ?? 'f16',
-    breakdownMiB: mem ? { total: +mem[1], model: +mem[2], context: +mem[3], compute: +mem[4] } : null,
+    breakdownMiB: rows.length
+      ? { total: sum(2), model: sum(3), context: sum(4), compute: sum(5), pools: rows.map((r) => r[1]) }
+      : null,
   };
 };
 const loadedSize = async () => {
