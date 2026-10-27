@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-27T13:40:58.942Z",
+  "model": "llama3.2:1b",
+  "checks": [
+    {
+      "name": "no token is refused",
+      "ok": true
+    },
+    {
+      "name": "a wrong token is refused",
+      "ok": true
+    },
+    {
+      "name": "alice gets in",
+      "ok": true
+    },
+    {
+      "name": "bob gets in",
+      "ok": true
+    },
+    {
+      "name": "a token without \"Bearer \" is refused",
+      "ok": true
+    },
+    {
+      "name": "bob is refused after his line is removed and Caddy reloads",
+      "ok": true,
+      "detail": "reload 355 ms, bob 401, alice 200"
+    },
+    {
+      "name": "streaming still streams through the gate",
+      "ok": true,
+      "detail": "first chunk at 94 ms of 5636 ms"
+    },
+    {
+      "name": "the log names alice and bob on their requests",
+      "ok": true
+    },
+    {
+      "name": "no token appears in the logs",
+      "ok": true
+    }
+  ],
+  "ollama": "0.40.11",
+  "caddy": "v2.11.7",
+  "socketErrorsAfterReload": 1,
+  "reloadMs": 355,
+  "latency": {
+    "calls": 50,
+    "directMedianMs": 0.71,
+    "gateMedianMs": 3.29,
+    "addedMs": 2.57
+  },
+  "streaming": {
+    "runs": 5,
+    "direct": {
+      "firstChunkMedianMs": 81,
+      "totalMedianMs": 4984,
+      "chunksMedian": 81
+    },
+    "gate": {
+      "firstChunkMedianMs": 94,
+      "totalMedianMs": 5636,
+      "chunksMedian": 81
+    }
+  },
+  "logs": {
+    "accessLines": 68,
+    "perUser": {
+      "(refused)": 5,
+      "alice": 62,
+      "bob": 1
+    },
+    "sampleAuthorization": [
+      "REDACTED"
+    ]
+  }
+}
