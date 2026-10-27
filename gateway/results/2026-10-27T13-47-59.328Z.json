@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-27T13:40:58.942Z",
+  "date": "2026-10-27T13:47:59.328Z",
   "model": "llama3.2:1b",
   "checks": [
     {
@@ -23,14 +23,23 @@
       "ok": true
     },
     {
+      "name": "alice cannot delete, pull or create models through the gate",
+      "ok": true,
+      "detail": "direct delete 404 (Ollama has no guard), gate: delete 403, pull 403, create 403"
+    },
+    {
+      "name": "the OpenAI-compatible /v1 API still works for alice",
+      "ok": true
+    },
+    {
       "name": "bob is refused after his line is removed and Caddy reloads",
       "ok": true,
-      "detail": "reload 355 ms, bob 401, alice 200"
+      "detail": "reload 401 ms, bob 401, alice 200"
     },
     {
       "name": "streaming still streams through the gate",
       "ok": true,
-      "detail": "first chunk at 94 ms of 5636 ms"
+      "detail": "first chunk at 91 ms of 5098 ms"
     },
     {
       "name": "the log names alice and bob on their requests",
@@ -44,31 +53,31 @@
   "ollama": "0.40.11",
   "caddy": "v2.11.7",
   "socketErrorsAfterReload": 1,
-  "reloadMs": 355,
+  "reloadMs": 401,
   "latency": {
     "calls": 50,
-    "directMedianMs": 0.71,
-    "gateMedianMs": 3.29,
-    "addedMs": 2.57
+    "directMedianMs": 0.72,
+    "gateMedianMs": 3.35,
+    "addedMs": 2.63
   },
   "streaming": {
     "runs": 5,
     "direct": {
-      "firstChunkMedianMs": 81,
-      "totalMedianMs": 4984,
+      "firstChunkMedianMs": 84,
+      "totalMedianMs": 5309,
       "chunksMedian": 81
     },
     "gate": {
-      "firstChunkMedianMs": 94,
-      "totalMedianMs": 5636,
+      "firstChunkMedianMs": 91,
+      "totalMedianMs": 5098,
       "chunksMedian": 81
     }
   },
   "logs": {
-    "accessLines": 68,
+    "accessLines": 72,
     "perUser": {
       "(refused)": 5,
-      "alice": 62,
+      "alice": 66,
       "bob": 1
     },
     "sampleAuthorization": [

@@ -134,6 +134,29 @@ async function run() {
     await raw.arrayBuffer();
     check('a token without "Bearer " is refused', raw.status === 401);
 
+    // 1b. A valid token is not admin rights. The model names do not exist, so nothing is deleted
+    // or downloaded even if the gate let them through: Ollama would answer 404 instead of 403.
+    const admin = async (path, method, body, token) => {
+      const headers = { 'Content-Type': 'application/json' };
+      if (token) headers.Authorization = `Bearer ${token}`;
+      const res = await fetch(`${token ? GATE : DIRECT}${path}`, { method, headers, body });
+      await res.arrayBuffer();
+      return res.status;
+    };
+    const ghost = JSON.stringify({ model: 'zz-does-not-exist', stream: false });
+    const deleteDirect = await admin('/api/delete', 'DELETE', ghost, null);
+    const deleteGate = await admin('/api/delete', 'DELETE', ghost, alice);
+    const pullGate = await admin('/api/pull', 'POST', ghost, alice);
+    const createGate = await admin('/api/create', 'POST', ghost, alice);
+    check(
+      'alice cannot delete, pull or create models through the gate',
+      deleteGate === 403 && pullGate === 403 && createGate === 403,
+      `direct delete ${deleteDirect} (Ollama has no guard), gate: delete ${deleteGate}, pull ${pullGate}, create ${createGate}`,
+    );
+    const v1 = await fetch(`${GATE}/v1/models`, { headers: { Authorization: `Bearer ${alice}` } });
+    await v1.arrayBuffer();
+    check('the OpenAI-compatible /v1 API still works for alice', v1.status === 200);
+
     // 2. Revoke bob without a restart.
     writeUsers({ alice });
     const reloadMs = reload();

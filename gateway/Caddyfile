@@ -22,12 +22,20 @@
 		respond `{"error":"missing or unknown token"}` 401
 	}
 
-	handle {
+	# A valid token is not admin rights: without this list, alice could also delete or pull models
+	# (/api/delete, /api/pull, /api/create...). Only what a user needs goes through.
+	@allowed path /api/chat /api/generate /api/embed /api/tags /api/show /api/version /v1/*
+	handle @allowed {
 		reverse_proxy host.docker.internal:11434 {
 			header_up Host localhost:11434
 			# Ollama never sees the token. header_up changes only the copy sent to Ollama:
 			# request_header -Authorization would also empty {gateway_user} in the log line.
 			header_up -Authorization
 		}
+	}
+
+	handle {
+		header Content-Type application/json
+		respond `{"error":"not allowed through the gate"}` 403
 	}
 }
