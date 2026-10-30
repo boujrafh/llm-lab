@@ -3,12 +3,15 @@
 // Usage (Git Bash):  node speed-test.mjs [runs] [model ...]
 //   default runs: 3; default models: every model Ollama has, except embedding models
 //   BANDWIDTH_GBS=38.4 overrides the memory bandwidth used for the prediction
+//   PREDICT_ONLY=1 prints the prediction and the bytes read per token, without generating anything
 //
 // The rule being tested: each new token reads every active weight once from memory, so
 //   max tokens/s ≈ memory bandwidth ÷ bytes of weights read per token.
-// For a dense model that is the whole file. For a mixture-of-experts model only the experts used
-// per token are read, so the estimate scales the file by (experts used ÷ experts total). That is
-// rough: shared layers are read every time, so the true figure sits between the two numbers.
+// For a dense model that is the whole file. For a mixture-of-experts model it is counted tensor by
+// tensor (from /api/show verbose): expert tensors (*_exps) count for (experts used ÷ experts total),
+// every other layer counts in full, and the input embedding table counts for nothing (one row per
+// token). Scaling the whole file by (used ÷ total) is wrong: shared layers are often stored at a
+// higher precision than the experts (gpt-oss:20b: BF16 vs MXFP4) and are read at every token.
 //
 // For each model: one warm-up request (loads it, not counted), then [runs] requests with a
 // different first line each time so no cached prompt is reused. Records writing speed (eval),
@@ -24,6 +27,27 @@ const RUNS = Number(process.argv[2] ?? 3);
 const HOST = process.env.OLLAMA_URL ?? 'http://localhost:11434';
 const BANDWIDTH_GBS = Number(process.env.BANDWIDTH_GBS ?? 38.4); // 2 channels × 8 bytes × 2400 MT/s
 const NUM_PREDICT = 200;
+const PREDICT_ONLY = process.env.PREDICT_ONLY === '1';
+
+// Bytes per weight for the tensor types Ollama reports. Block formats include their scales.
+const BYTES_PER_WEIGHT = {
+  F32: 4, F16: 2, BF16: 2, Q8_0: 34 / 32, Q4_0: 18 / 32, Q4_1: 20 / 32, Q5_0: 22 / 32, Q5_1: 24 / 32,
+  Q2_K: 84 / 256, Q3_K: 110 / 256, Q4_K: 144 / 256, Q5_K: 176 / 256, Q6_K: 210 / 256, MXFP4: 17 / 32,
+};
+
+// Gigabytes read per token by a mixture-of-experts model, or null if a tensor type is unknown.
+const moeReadGB = (tensors, used, total) => {
+  const tied = !tensors.some((t) => t.name === 'output.weight'); // output reuses the embedding table
+  let bytes = 0;
+  for (const t of tensors) {
+    const perWeight = BYTES_PER_WEIGHT[t.type];
+    if (perWeight === undefined) return null;
+    if (t.name === 'token_embd.weight' && !tied) continue;
+    const size = t.shape.reduce((a, b) => a * Number(b), 1) * perWeight;
+    bytes += /_exps\./.test(t.name) ? (size * used) / total : size;
+  }
+  return bytes / 1e9;
+};
 
 const api = async (route, body) => {
   const res = await fetch(`${HOST}${route}`, body
@@ -67,13 +91,31 @@ const results = [];
 for (const model of models) {
   const tag = tags.find((t) => t.name === model);
   if (!tag) { console.error(`skip ${model}: not installed`); continue; }
-  const show = await api('/api/show', { model });
+  const show = await api('/api/show', { model, verbose: true });
   const info = show.model_info ?? {};
   const arch = info['general.architecture'];
   const expertsTotal = info[`${arch}.expert_count`] ?? 0;
   const expertsUsed = info[`${arch}.expert_used_count`] ?? 0;
   const fileGB = tag.size / 1e9;
-  const readGB = expertsTotal ? fileGB * (expertsUsed / expertsTotal) : fileGB;
+  let readGB = fileGB;
+  if (expertsTotal) {
+    readGB = moeReadGB(show.tensors ?? [], expertsUsed, expertsTotal);
+    if (readGB === null) {
+      readGB = fileGB * (expertsUsed / expertsTotal); // fallback, too optimistic
+      console.error(`${model}: unknown tensor type, MoE prediction falls back to file × experts used/total`);
+    }
+  }
+
+  if (PREDICT_ONLY) {
+    results.push({
+      model,
+      fileGB: r1(fileGB),
+      experts: expertsTotal ? `${expertsUsed}/${expertsTotal}` : null,
+      readPerTokenGB: Math.round(readGB * 100) / 100,
+      predictedMax: r1(BANDWIDTH_GBS / readGB),
+    });
+    continue;
+  }
 
   process.stdout.write(`${model}: loading… `);
   const warm = await generate(model, 0);
@@ -101,6 +143,7 @@ for (const model of models) {
     fileGB: r1(fileGB),
     experts: expertsTotal ? `${expertsUsed}/${expertsTotal}` : null,
     predictedMaxDense: r1(BANDWIDTH_GBS / fileGB),
+    readPerTokenGB: Math.round(readGB * 100) / 100,
     predictedMax: r1(BANDWIDTH_GBS / readGB),
     measuredEvalMedian: r1(median(runs.map((x) => x.evalRate))),
     measuredPromptMedian: r1(median(runs.map((x) => x.promptRate))),
@@ -114,6 +157,7 @@ for (const model of models) {
 
 console.log(`\nOllama ${version}, bandwidth used for the prediction: ${BANDWIDTH_GBS} GB/s\n`);
 console.table(results.map(({ runs, ...row }) => row));
+if (PREDICT_ONLY) process.exit(0);
 
 const outDir = path.join(path.dirname(fileURLToPath(import.meta.url)), 'results');
 mkdirSync(outDir, { recursive: true });
